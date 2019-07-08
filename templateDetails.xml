@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>OLSLive</name>
+	<version>1.0</version>
+	<creationDate>04/05/2015</creationDate>
+	<author>www.Canadatopit.com</author>
+	<authorEmail>admin@Canadatopit.com</authorEmail>
+	<copyright>Copyright (C) 2015, All rights reserved.</copyright>
+	<description>A custom design for Oracle Legal Services</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+	</files>
+	<positions>
+		<position>extra-navigation</position>
+		<position>nav</position>
+		<position>mob-nav</position>		
+		<position>search</position>
+		<position>extra-logo</position>
+		<position>extra-header</position>
+		<position>breadcrumbs</position>
+		<position>extra-intro</position>		
+		<position>after-content</position>
+		<position>footer-left-col</position>
+		<position>footer-middle-col</position>
+		<position>footer-right-col</position>
+		<position>copyright</position>
+		<position>after-footer</position>
+		<position>debug</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+<!-- Color Controls -->
+<field type="spacer" name="tmplColorSpacer" hr="true" />
+<field type="spacer" name="tmplColorSpacerLabel" label="&lt;b&gt;Color Settings&lt;/b&gt;" />				
+				<field name="tmplMainColor" class="" type="color" default="#74a5d6"
+					label="Template Logo and decoration background color"
+					description="Main color used for top decoration elements as their background and the logo, originally defaults to a bluish color." />
+					
+				<field name="bodyColor" class="" type="color" default="#2e2e2e"
+					label="body Text Color"
+					description="This color is used generally for all places, except for those having own special color defined" />
+					
+				<field name="dominantTextcolor" class="" type="color" default="#fff"
+					label="Decoration text: Carousel-top, etc."
+					description="Appears in carousel / slider and the testimonials area." />
+
+				<field name="socialIconHoverColor" class="" type="color" default="#3b5998"
+					label="Social Icons Hover Color"
+					description="This color is used for the social icons hover state and default to a dark gray." />
+<!-- top-nav colors -->					
+<field type="spacer" name="navBorderSpacer" hr="true" />
+<field type="spacer" name="navBorderSpacerLabel" label="&lt;b&gt;Top Navigation Color Settings&lt;/b&gt;" />				
+				<field name="caretColor" class="" type="color" default="#f00"
+					label="Caret - Navigation Indicator"
+					description="This color is used at the end of the menu items that contain sub-menus, as a small sign, defaults to red." />
+
+				<field name="topNavScreenWideBgColor" class="" type="color" default="#f0f0f0"
+					label="Navigation Full Background Color"
+					description="The screen-wide top navigation background color." />
+
+				<field name="topNavStaticColor" class="" type="color" default="#3b5998"
+					label="Top Navigation Elements' Color"
+					description="The screen-wide top navigation background color." />
+					
+				<field name="topNavStaticBgColor" class="" type="color" default="#f0f0f0"
+					label="Top Navigation Elements' Background Color"
+					description="The screen-wide top navigation background color." />					
+
+				<field name="topNavHoverAndFocusColor" class="" type="color" default="#131714"
+					label="Hover and Focus"
+					description="Hover and Focus" />					
+
+				<field name="topNavHoverAndFocusBgColor" class="" type="color" default="#d0d0d0"
+					label="Hover and Focus Background"
+					description="Hover and Focus Background" />					
+
+				<field name="topNavActiveColor" class="" type="color" default="#ffffff"
+					label="Active"
+					description="Active" />					
+
+				<field name="topNavActiveBgColor" class="" type="color" default="#c8c8c8"
+					label="Active Background"
+					description="Active Background" />	
+					
+<field type="spacer" name="topNavDropDownSpacer" hr="true" />
+<field type="spacer" name="topNavDropDownSpacerLabel" label="&lt;b&gt;Top Navigation Drop-Down Color Settings&lt;/b&gt;" />				
+				<field name="topNavDropDownStaticColor" class="" type="color" default="3b5998"
+					label="Static"
+					description="Static" />					
+
+				<field name="topNavDropDownStaticBgColor" class="" type="color" default="#f0f0f0"
+					label="Static Background"
+					description="Static Background" />	
+					
+				<field name="topNavDropDownStaticTriangleLeftBgColor" class="" type="color" default="#f0f0f0"
+					label="Static Background Left Triangle"
+					description="Static Background Left Triangle" />					
+
+				<field name="topNavDropDownStaticTriangleRightBgColor" class="" type="color" default="#f0f0f0"
+					label="Static Background Right Triangle"
+					description="Static Background Right Triangle" />					
+
+				<field name="topNavDropDownHoverAndFocusColor" class="" type="color" default="#131714"
+					label="Hover and Focus"
+					description="Hover and Focus" />					
+
+				<field name="topNavDropDownHoverAndFocusBgColor" class="" type="color" default="#d0d0d0"
+					label="Hover and Focus Background"
+					description="Hover and Focus Background" />					
+
+				<field name="topNavDropDownActiveColor" class="" type="color" default="#2e2e2e"
+					label="Active"
+					description="Active" />					
+
+				<field name="topNavDropDownActiveBgColor" class="" type="color" default="#c8c8c8"
+					label="Active Background"
+					description="Active Background" />					
+
+				<field name="topNavDropDownOpenMenuStateColor" class="" type="color" default="#131714"
+					label="Open Menu State"
+					description="Open Menu State" />
+					
+				<field name="topNavDropDownOpenMenuStateBgColor" class="" type="color" default="#d0d0d0"
+					label="Open Menu State Background"
+					description="Open Menu State Background" />	
+<!-- mob-nav colors -->					
+<field type="spacer" name="mobNavBorderSpacer" hr="true" />
+<field type="spacer" name="mobNavBorderSpacerLabel" label="&lt;b&gt;Mobile Navigation Color Settings&lt;/b&gt;" />				
+				<field name="mobNavColor" class="" type="color" default="#3b5998"
+					label="Mobile Navigation Top Botton Title Color"
+					description="Changes title of botton of mobile top-most navigation" />
+
+	
+				<field name="mobNavStaticColor" class="" type="color" default="#3b5998"
+					label="Static"
+					description="Static" />					
+
+				<field name="mobNavStaticBgColor" class="" type="color" default="#f0f0f0"
+					label="Static Background"
+					description="Static Background" />					
+
+				<field name="mobNavHoverAndFocusColor" class="" type="color" default="#131714"
+					label="Hover and Focus"
+					description="Hover and Focus" />					
+
+				<field name="mobNavHoverAndFocusBgColor" class="" type="color" default="#d0d0d0"
+					label="Hover and Focus Background"
+					description="Hover and Focus Background" />					
+	
+				<field name="mobNavActiveColor" class="" type="color" default="#ffffff"
+					label="Active"
+					description="Active" />					
+
+				<field name="mobNavActiveBgColor" class="" type="color" default="#c8c8c8"
+					label="Active Background"
+					description="Active Background" />	
+					
+<field type="spacer" name="mobNavSubMenuSpacer" hr="true" />
+<field type="spacer" name="mobNavSubMenuSpacerLabel" label="&lt;b&gt;Mobile Navigation Sub-Menu Color Settings&lt;/b&gt;" />				
+				<field name="mobNavSubMenuStaticColor" class="" type="color" default="#3b5998"
+					label="Static"
+					description="Static" />					
+
+				<field name="mobNavSubMenuStaticBgColor" class="" type="color" default="#f0f0f0"
+					label="Static Background"
+					description="Static Background" />
+				<field name="mobNavSubMenuHoverColor" class="" type="color" default="#131714"
+					label="Hover"
+					description="Hover" />	
+					
+				<field name="mobNavSubMenuHoverBgColor" class="" type="color" default="#d0d0d0"
+					label="Hover Background"
+					description="Hover Background" />					
+
+				<field name="mobNavSubMenuActiveColor" class="" type="color" default="#ffffff"
+					label="Active"
+					description="Active" />
+					
+				<field name="mobNavSubMenuActiveBgColor" class="" type="color" default="#c8c8c8"
+					label="Active Background"
+					description="Active Background" />		
+
+<field type="spacer" name="mobNavSubMenuRootSpacer" hr="true" />
+<field type="spacer" name="mobNavSubMenuRootSpacerLabel" label="&lt;b&gt;Mobile Navigation Sub-Menu Root-Button Color Settings&lt;/b&gt;" />				
+				<field name="mobNavRootButtonColor" class="" type="color" default="#ffffff"
+					label="Static"
+					description="Static" />
+					
+				<field name="mobNavRootButtonBgColor" class="" type="color" default="#ffffff"
+					label="Static Background"
+					description="Static Background" />	
+				<field name="mobNavRootButtonBorderColor" class="" type="color" default="#ffffff"
+					label="Static Border"
+					description="Static Border" />					
+		
+				<field name="mobNavRootButtonHoverFocusActiveColor" class="" type="color" default="#ffffff"
+					label="Hover and Focus and Active"
+					description="Hover and Focus and Active" />
+
+				<field name="mobNavRootButtonHoverFocusActiveBgColor" class="" type="color" default="#ffffff"
+					label="Hover and Focus and Active Background"
+					description="Hover and Focus and Active Background" />
+
+				<field name="mobNavRootButtonHoverFocusActiveBorderColor" class="" type="color" default="#888888"
+					label="Hover and Focus and Active Border"
+					description="Hover and Focus and Active Border" />
+	
+<!-- carousel colors -->
+<field type="spacer" name="colorSpacer3" hr="true" />
+				<field name="carouselReadMoreBgColor" class="" type="color" default="#000"
+					label="Carousel Read More Botton Background Color"
+					description="For the 'read more' botton of the slider, at top of the template" />
+
+
+				<field name="carouselReadMoreColor" class="" type="color" default="#f00"
+					label="Carousel Read More Botton Color"
+					description="For the 'read more' botton of the slider, at top of the template" />
+
+				<field name="carouselReadMoreHoverColor" class="" type="color" default="#fff"
+					label="Carousel Read More Botton Hover Color"
+					description="For the 'read more' botton of the slider, at top of the template" />
+					
+				<field name="carouselReadMoreHoverBgColor" class="" type="color" default="#f00"
+					label="Carousel Read More Botton Hover Background Color"
+					description="For the 'read more' botton of the slider, at top of the template" />
+<field type="spacer" name="colorSpacer6" hr="true" />					
+				<field name="breadcrumbsActiveLinkColor" class="" type="color" default="#337AB7"
+					label="Breadcrumbs Active Link Color"
+					description="Used for active links of the breadcrumbs. Defaults to a bluish color." />
+					
+				<field name="breadcrumbsNonActiveLinkColor" class="" type="color" default="#777"
+					label="Breadcrumbs Non Active Link Color"
+					description="Used for non-active links of the breadcrumbs. Defaults to a grayish color." />					
+<field type="spacer" name="colorSpacer4a" hr="true" />										
+				<field name="welcomeSectionColor" class="" type="color" default="#6c6c6c"
+					label="Intro (Welcome) Section Color"
+					description="Used in Intro (Welcome) Section. Defaults to a very dark gray." />
+<field type="spacer" name="colorSpacer4b" hr="true" />					
+				<field name="srvLinkBtnColor" class="" type="color" default="#6c6c6c"
+					label="Service Link Botton Text Color"
+					description="Used in service sections for color of text inside bottons. Defaults to a very dark blue." />
+					
+				<field name="srvLinkBtnHoverColor" class="" type="color" default="#7b2f46"
+					label="Service Link Botton Text Color, Hover"
+					description="Hover state color of the service botton." />
+
+				<field name="srvLinkBtnHoverBgColor" class="" type="color" default="#fff"
+					label="Service Link Botton Background Color, Hover"
+					description="Hover state background color of the service botton." />
+ 
+				<field name="srvLinkColor" class="" type="color" default="#6c6c6c"
+					label="Service Link Color"
+					description="Used in service sections for links. Defaults to a very dark blue." />
+					
+				<field name="srvLinkHoverColor" class="" type="color" default="#7b2f46"
+					label="Service Link Hover Color"
+					description="Used in service sections for links. Defaults to a very dark blue." />
+					
+<field type="spacer" name="colorSpacer5" hr="true" />					
+				<field name="footerBgColor" class="" type="color" default="#131714"
+					label="Footer Background Color"
+					description="Used in the footer background. Defaults to a not-totally black." />
+					
+				<field name="footerLinkTextcolor" class="" type="color" default="#a9bfd5"
+					label="Footer Links Color"
+					description="Used in colors of links that appear in the footer area." />
+
+				<field name="footerLinkIndicatorcolor" class="" type="color" default="#943955"
+					label="Footer Links-Indicator Color"
+					description="This color can be optionally used to decorate an indicator sign for the footer links." />
+					
+				<field name="footerLinkTextHovercolor" class="" type="color" default="#fff"
+					label="Footer Links Hover Color"
+					description="Used in colors of links in hover state of the footer area." />
+
+					
+				<field name="footerH3Color" class="" type="color" default="#b6ac92"
+					label="Footer H3 Color"
+					description="Header color used in the footer area for h3 markup tag" />
+					
+				<field name="footerCopyrightTextColor" class="" type="color" default="#a9bfd5"
+					label="Footer Copyright Text Color"
+					description="Used in footer area for the copyrgiht text." />
+					
+				<field name="footerCopyrightBgColor" class="" type="color" default="#292929"
+					label="Footer Copyright Background Color"
+					description="Used in footer area for the copyrgiht text background." />
+					
+<field type="spacer" name="hrRGBASpacerLine" label="&lt;hr/&gt;" />
+<field type="spacer" name="hrRGBASpacerLabel" label="&lt;b&gt;Carousel: Background Of Service Content&lt;/b&gt;" />
+
+				<field name="rColorIntegerA" type="integer" default="0" 
+					label="Type A - &lt;b&gt;Red&lt;/b&gt;" 
+					description="Used to form an RGB color (3-components color) used for borders, slide-content background, etc. This is the red-component of the RGB-color." 
+					first="0" last="255" step="1" />	
+					
+				<field name="gColorIntegerA" type="integer" default="0" 
+					label="Type A - &lt;b&gt;Green&lt;/b&gt;" 
+					description="Used to form an RGB color (3-components color) used for borders, slide-content background, etc. This is the green-component of the RGB-color." 
+					first="0" last="255" step="1" />	
+
+				<field name="bColorIntegerA" type="integer" default="0" 
+					label="Type A - &lt;b&gt;Blue&lt;/b&gt;" 
+					description="Used to form an RGB color (3-components color) used for borders, slide-content background, etc. This is the blue-component of the RGB-color." 
+					first="0" last="255" step="1" />	
+<field type="spacer" name="hrRGBBSpacerLine" label="&lt;hr/&gt;" />
+<field type="spacer" name="hrRGBBSpacerLabel" label="&lt;b&gt;Service Link Borders&lt;/b&gt;" />
+
+				<field name="rColorIntegerB" type="integer" default="108" 
+					label="Type B - &lt;b&gt;Red&lt;/b&gt;"
+					description="Used to form an RGB color (3-components color) used for borders, slide-content background, etc. This is the red-component of the RGB-color." 
+					first="0" last="255" step="1" />	
+					
+				<field name="gColorIntegerB" type="integer" default="108" 
+					label="Type B - &lt;b&gt;Green&lt;/b&gt;"
+					description="Used to form an RGB color (3-components color) used for borders, slide-content background, etc. This is the green-component of the RGB-color." 
+					first="0" last="255" step="1" />	
+
+				<field name="bColorIntegerB" type="integer" default="108" 
+					label="Type B - &lt;b&gt;Blue&lt;/b&gt;"
+					description="Used to form an RGB color (3-components color) used for borders, slide-content background, etc. This is the blue-component of the RGB-color." 
+					first="0" last="255" step="1" />
+<field type="spacer" name="hrRGBCSpacerLine" label="&lt;hr/&gt;" />
+<field type="spacer" name="hrRGBCSpacerLabel" label="&lt;b&gt;Slider bottons color, etc.&lt;/b&gt;" />
+				<field name="rColorIntegerC" type="integer" default="255" 
+					label="Type C - &lt;b&gt;Red&lt;/b&gt;"
+					description="RGB effecting on slider bottons, etc." 
+					first="0" last="255" step="1" />
+					
+				<field name="gColorIntegerC" type="integer" default="255" 
+					label="Type C - &lt;b&gt;Green&lt;/b&gt;"
+					description="RGB effecting on slider bottons, etc." 
+					first="0" last="255" step="1" />
+
+				<field name="bColorIntegerC" type="integer" default="255" 
+					label="Type C - &lt;b&gt;Blue&lt;/b&gt;"
+					description="RGB effecting on slider bottons, etc."
+					first="0" last="255" step="1" />
+<field type="spacer" name="hrOpacitySpacer" label="&lt;hr/&gt;" />
+				<field name="opacity1" type="integer" default="1" 
+					label="default was &lt;b&gt;0.1&lt;/b&gt;"
+					description="Top navigation vertical dividers" 
+					first="0" last="7" step="1" />
+
+				<field name="opacity2" type="integer" default="2" 
+					label="default was &lt;b&gt;0.2&lt;/b&gt;"
+					description="Search and service-links borders." 
+					first="0" last="7" step="1" />
+					
+				<field name="opacity3" type="integer" default="3" 
+					label="default was &lt;b&gt;0.3&lt;/b&gt;"
+					description="Related to type A of RGB color settings. Used for the search input box border, carousel header and slide content background color, service area header botton border and testimonial caption background color." 
+					first="0" last="7" step="1" />
+
+				<field name="opacity4" type="integer" default="4" 
+					label="default was &lt;b&gt;0.4&lt;/b&gt;"
+					description="Defines opacity of carousel content and header, and the testimonial header backgrounds." 
+					first="0" last="7" step="1" />
+
+				<field name="opacity5" type="integer" default="5" 
+					label="Slider bottons: default &lt;b&gt;0.5&lt;/b&gt;"
+					description="Carousel and testimonials slider bottons opacity are set by this variable." 
+					first="0" last="7" step="1" />
+
+				<field name="opacity6" type="integer" default="6" 
+					label="default was &lt;b&gt;0.6&lt;/b&gt;"
+					description="Carousel top head background opacity where advertisements could be placed." 
+					first="0" last="7" step="1" />
+					
+				<field name="opacity7" type="integer" default="95" 
+					label="Top Navigation Opacity."
+					description="used in style of the design, mostly for borders. The default was 0.95" 
+					first="0" last="99" step="1" />
+<!-- End - Color Controls -->
+
+<!-- Image Input Controls -->
+<field type="spacer" name="imageFilesSpacer" hr="true" />
+<field type="spacer" name="imageFilesSpacerLabel" label="&lt;b&gt;Color Settings&lt;/b&gt;" />
+
+				<field name="logoFile" class="" type="media" directory="stories/olslive-v1/logos"
+					label="Logo file"
+					description="You can upload a logo file here to change the main site logo." 
+					preview="tooltip"
+					/>
+
+				<field name="canadaLeafImage" class="" type="media" directory="stories/olslive-v1/logos"
+					label="Canada Leaf Image"
+					description="This image is used as a part of logo in the font version of the log." 
+					preview="tooltip"
+					/>
+					
+				<field name="slide1bgimg" type="media" directory="stories/olslive-v1/carousel" 
+					label="Slide-1 background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>
+				
+				<field name="slide2bgimg" type="media" directory="stories/olslive-v1/carousel" 
+					label="Slide-2 background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>
+					
+				<field name="slide3bgimg" type="media" directory="stories/olslive-v1/carousel" 
+					label="Slide-3 background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>
+
+				<field name="slide4bgimg" type="media" directory="stories/olslive-v1/carousel" 
+					label="Slide-4 background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>
+
+				<field name="slide5bgimg" type="media" directory="stories/olslive-v1/carousel" 
+					label="Slide-5 background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>
+
+				<field name="slide6bgimg" type="media" directory="stories/olslive-v1/carousel" 
+					label="Slide-6 background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>
+				
+				<field name="testimonialBgImg" type="media" directory="stories/olslive-v1/images" 
+					label="Testimonial background image"
+					description="Slide-1 background image"				
+					preview="tooltip"
+				/>				
+<!-- End - Image Input Controls -->
+
+<!-- Social Icon Controls -->
+<field type="spacer" name="socialMediaSpacer" hr="true" />
+<field type="spacer" name="socialMediaSpacerLabel" label="&lt;b&gt;Social Media Settings&lt;/b&gt;" />
+				<field name="facebookSocial"  type="url" default=""
+					label="Facebook link"
+					description="Link to your Facebook"
+					size="20"/>
+
+				<field name="twitterSocial"  type="url" default=""
+					label="Twitter link"
+					description="Link to your twitter"
+					size="20"/>
+
+				<field name="gplusSocial"  type="url" default=""
+					label="Google+ link"
+					description="Link to your Google+"
+					size="20"/>
+<!-- End - Social Icon Controls -->
+
+<!-- Carousel Controls -->
+<field type="spacer" name="carouselSpacer" hr="true" />
+<field type="spacer" name="carouselSpacerLabel" label="&lt;b&gt;Carousel Settings&lt;/b&gt;" />
+				<field name="advMsgPA"  type="text" default="Free Consultation Now"
+					label="Advertisement Message - left part"
+					description="This message together with B part will be shown in the site slide-show header area, also in mobile page header"
+					filter="string" />
+
+				<field name="advMsgPB"  type="text" default="416-990-9299"
+					label="Advertisement Message - right part"
+					description="This message together with A part will be shown in the site slide-show header area, also in mobile page header"
+					filter="string" />
+
+				<field name="cycleSliderTimeout"  type="text" default="3000"
+					label="Carousel slide show time (in seconds)"
+					description="Zero means manually sliding, greater than zero counts for slide show time"
+					filter="integer"/>
+<field type="spacer" name="spacerSlide1" hr="true" />
+				<field name="slide1a"  type="text" default="small-claims-court-matters.html"
+					label="Slide-1 link"
+					description="Slide link content"
+					filter="string" />
+					
+				<field name="slide1h1"  type="text" default="Small Claims Court"
+					label="Slide-1 Header"
+					description="Slide header content"
+					filter="string" />
+
+				<field name="slide1p"  type="textarea" 
+					default="If you receive a Statement of Claim from small claims court, it means someone is suing you for the reasons stated on the forms. "
+					label="Slide-1 description"
+					description="Slide description content"
+					filter="string" rows="10" cols="10"/>
+<field type="spacer" name="spacerSlide2" hr="true" />
+				<field name="slide2a"  type="text" default="small-claims-court-matters/debt-recovery.html"
+					label="Slide-2 link"
+					description="Slide link content"
+					filter="string" />	
+					
+				<field name="slide2h1"  type="text" default="Debt Recovery"
+					label="Slide-2 Header"
+					description="Slide header content"
+					filter="string" />
+
+				<field name="slide2p"  type="textarea" 
+					default="We are licensed paralegals and provide court representation in Small Claims Court and Specialize in debt recovery and collections."
+					label="Slide-2 description"
+					description="Slide description content"
+					filter="string" rows="10" cols="10" />
+
+<field type="spacer" name="spacerSlide3" hr="true" />				
+
+				<field name="slide3a"  type="text" default="jurisdiction-of-the-small-claims-court.html"
+					label="Slide-3 link"
+					description="Slide link content"
+					filter="string" />	
+					
+				<field name="slide3h1"  type="text" default="Jurisdiction of the Small Claims Court"
+					label="Slide-3 Header"
+					description="Slide header content"
+					filter="string" />
+
+				<field name="slide3p"  type="textarea" 
+					default="The Small Claims Court can handle any action for the payment of money or the recovery of possession of personal property where..."
+					label="Slide-3 description"
+					description="Slide description content"
+					filter="string" rows="10" cols="10" />
+
+				
+<field type="spacer" name="spacerSlide4" hr="true" />
+
+				<field name="slide4a"  type="text" default="small-claims-court-matters/debt-recovery.html"
+					label="Slide-4 link"
+					description="Slide link content"
+					filter="string" />
+					
+				<field name="slide4h1"  type="text" default="Debt Recovery"
+					label="Slide-4 Header"
+					description="Slide header content"
+					filter="string" />
+
+				<field name="slide4p"  type="textarea" 
+					default="If you receive a Statement of Claim from small claims court, it means someone is suing you for the reasons stated on the forms. "
+					label="Slide-4 description"
+					description="Slide description content"
+					filter="string" rows="10" cols="10"  />
+
+						
+<field type="spacer" name="spacerSlide5" hr="true" />
+				<field name="slide5a"  type="text" default="small-claims-court-matters.html"
+					label="Slide-5 link"
+					description="Slide link content"
+					filter="string" />
+					
+				<field name="slide5h1"  type="text" default="Small Claims Court"
+					label="Slide-5 Header"
+					description="Slide header content"
+					filter="string" />
+
+				<field name="slide5p"  type="textarea" 
+					default="We are licensed paralegals and provide court representation in Small Claims Court and Specialize in debt recovery and collections."
+					label="Slide-5 description"
+					description="Slide description content"
+					filter="string" rows="10" cols="10" />
+
+
+<field type="spacer" name="spacerSlide6" hr="true" />
+				<field name="slide6a"  type="text" default="jurisdiction-of-the-small-claims-court.html"
+					label="Slide-6 link"
+					description="Slide link content"
+					filter="string" />	
+					
+				<field name="slide6h1"  type="text" default="Jurisdiction of the Small Claims Court"
+					label="Slide-6 Header"
+					description="Slide header content"
+					filter="string" />
+
+				<field name="slide6p"  type="textarea" 
+					default="The Small Claims Court can handle any action for the payment of money or the recovery of possession of personal property where..."
+					label="Slide-6 description"
+					description="Slide description content"
+					filter="string" rows="10" cols="10" />
+				
+<!-- Carousel Controls -->
+
+<!-- Home Page Intro-Welcome Section Controls -->
+<field type="spacer" name="introSpacer" hr="true" />
+<field type="spacer" name="introSpacerLabel" label="&lt;b&gt;Intdoructory Section Settings&lt;/b&gt;" />
+				<field name="introTitle"  type="text" default="Welcome to OLS"
+					label="Header"
+					description="header content"
+					filter="string" />					
+					
+				<field name="introContent"  type="textarea" default="Oracle Legal Services is a paralegal professional company . We provide the highest quality and variety of legal services. We offer extensive expertise in small claim courts matters, traffic ticket matters, landlord and tenant matters, and much more."
+					label="Message"
+					description="Message content"
+					filter="string" rows="10" cols="10" />					
+<!-- End - Home Page Intro-Welcome Section Controls -->
+
+<!-- Testimonial -->
+<field type="spacer" name="testimonialsSpacer" hr="true" />
+<field type="spacer" name="testimonialsSpacerLabel" label="&lt;b&gt;Testimonials Section Settings&lt;/b&gt;" />
+   				<field name="testimonialsCycleSliderTimeout"  type="text" default="0"
+					label="Testimonials' slide show time (in seconds)"
+					description="Zero means manually sliding, greater than zero counts for slide show time"
+					filter="integer"/>
+
+				<field name="writer1"  type="text" default="Trevor Comeau"
+					label="Testimonial-1 Writer"
+					description="Provide the Testimonial Writer name"
+					filter="string" />	
+					
+				<field name="story1"  type="textarea" default="I write to express my thanks to Mr. Rezabeik; I went to Oracle Legal Services for a breach of contract against a corporation. Mr Rezabeik submitted my claim to small claims court. I was shocked to see how quickly my case was settled. I was very impressed with the professionalism and approach to the situation. Excellent job!"
+					label="Testimonial-1 text"
+					description="Provide the Testimonial text content"
+					filter="string" rows="10" cols="10"/>					
+	
+				
+
+				<field name="writer2"  type="text" default="Joseph Hanti"
+					label="Testimonial-2 Writer"
+					description="Provide the Testimonial Writer name"
+					filter="string" />	
+					
+				<field name="story2"  type="textarea" default="I was referred to 'Oracle Legal Services' by a friend of mine for a debt recovery claim in Small Claims Court. I would recommend Oracle Legal Services to anyone who wants reliable and trustworthy legal advice. They're prompt, professional and they know the law."
+					label="Testimonial-2 text"
+					description="Provide the Testimonial text content"
+					filter="string" rows="10" cols="10" />					
+					
+				<field name="writer3"  type="text" default="Maryam M."
+					label="Testimonial-3 Writer"
+					description="Provide the Testimonial Writer name"
+					filter="string" />
+					
+				<field name="story3"  type="textarea" default="I would like to thank Mr. Rezabeik for an exceptional job in Landlord and Tenant Board. I am a landlord, and my tenant submitted an application to the landlord and tenant board for all kinds of damages. Mr.Rezabeik dismissed the case. Grate Job!"
+					label="Testimonial-3 text"
+					description="Provide the Testimonial text content"
+					filter="string" rows="10" cols="10" />
+
+				<field name="writer4"  type="text" default="Behrouz Javadi"
+					label="Testimonial-4 Writer"
+					description="Provide the Testimonial Writer name"
+					filter="string" />
+					
+				<field name="story4"  type="textarea" default="I called Oracle Leal Services for a Commercial Tenancy matter; I was very pleased to have Mr. Rezabeik represented my case, and I got a very good settlement in Settlement Conference at Small Claims Court. I would recommend his services and professionalism to others, and I will sure use his services in future."
+					label="Testimonial-4 text"
+					description="Provide the Testimonial text content"
+					filter="string"  rows="10" cols="10"/>
+	
+
+<!-- End - Testimonial -->
+					
+<!-- if Published -->
+<field type="spacer" name="ifPublishSpacer" hr="true" />
+<field type="spacer" name="ifPublishSpacerLabel" label="&lt;b&gt;Publish Section Settings&lt;/b&gt;" />
+				<field name="ifCarouselPublish"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Publish Carousel"
+					description="Publish Carousel"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="ifWelcomeIntroPublish"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Publish (welcome) Intro"
+					description="Publish (welcome) Intro"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+	
+				<field name="ifTestimonialsPublish"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Publish Testimonials"
+					description="Publish Testimonials"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>			
+				
+				<field name="ifFooterPublish"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="Publish Footer"
+					description="Publish Footer"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+<!-- End - if Published -->
+
+<!-- Footer Area -->
+<field type="spacer" name="footerCopyrightSpacer" hr="true" />
+<field type="spacer" name="footerCopyrightSpacerLabel" label="&lt;b&gt;Footer Copyright&lt;/b&gt;" />
+
+				<field name="footerCopyrightText"  type="textarea" default=""
+					label="Optional copyright text"
+					description="Copyright text that appear in the footer area."
+					filter="string" rows="10" cols="10"/>
+<!-- End - Footer Area -->
+
+<!-- Animation Controls -->
+<field type="spacer" name="animSpacer" hr="true" />
+<field type="spacer" name="animSpacerLabel" label="&lt;b&gt;Animation Settings&lt;/b&gt;" />
+				<field name="logoWowAnim" type="list" default="" 
+						label="Logo Animation" description="Choose an animation type">
+					<option value="">None</option>
+					<option value="slideOutUp">slide Out Up</option>
+					<option value="slideOutRight">slide Out Right</option>
+					<option value="slideOutLeft">slide Out Left</option>
+					<option value="slideOutDown">slide Out Down</option>
+					<option value="slideInUp">slide In Up</option>
+					<option value="slideInRight">slide In Right</option>
+					<option value="slideInLeft">slide In Left</option>
+					<option value="slideInDown">slide In Down</option>
+					<option value="zoomOutUp">zoom Out Up</option>
+					<option value="zoomOutRight">zoom Out Right</option>
+					<option value="zoomOutLeft">zoom Out Left</option>
+					<option value="zoomOutDown">zoom Out Down</option>
+					<option value="zoomOut">zoom Out</option>
+					<option value="zoomInUp">zoom In Up</option>
+					<option value="zoomInRight">zoom In Right</option>
+					<option value="zoomInLeft">zoom In Left</option>
+					<option value="zoomInDown">zoom In Down</option>
+					<option value="zoomIn">zoom In</option>
+					<option value="rollOut">roll Out</option>
+					<option value="rollIn">roll In</option>
+					<option value="hinge">hinge</option>
+					<option value="rotateOutUpRight">rotate Out Up Right</option>
+					<option value="rotateOutUpLeft">rotate Out Up Left</option>
+					<option value="rotateOutDownRight">rotate Out Down Right</option>
+					<option value="rotateOutDownLeft">rotate Out Down Left</option>
+					<option value="rotateOut">rotate Out</option>
+					<option value="rotateInUpRight">rotate In Up Right</option>
+					<option value="rotateInUpLeft">rotate In Up Left</option>
+					<option value="rotateInDownRight">rotate In Down Right</option>
+					<option value="rotateInDownLeft">rotate In Down Left</option>
+					<option value="rotateIn">rotate In</option>
+					<option value="lightSpeedOut">light Speed Out</option>
+					<option value="lightSpeedIn">light Speed In</option>
+					<option value="flipOutY">flip Out Y</option>
+					<option value="flipOutX">flip Out X</option>
+					<option value="flipInY">flip In Y</option>
+					<option value="flipInX">flip In X</option>
+					<option value="fadeOutUpBig">fade Out Up Big</option>
+					<option value="fadeOutUp">fade Out Up</option>
+					<option value="fadeOutRightBig">fade Out Right Big</option>
+					<option value="fadeOutRight">fade Out Right</option>
+					<option value="fadeOutLeftBig">fade Out Left Big</option>
+					<option value="fadeOutLeft">fade Out Left</option>
+					<option value="fadeOutDownBig">fade Out Down Big</option>
+					<option value="fadeOutDown">fade Out Down</option>
+					<option value="fadeOut">fade Out</option>
+					<option value="fadeInUpBig">fade In Up Big</option>
+					<option value="fadeInUp">fade In Up</option>
+					<option value="fadeInRightBig">fade In Right Big</option>
+					<option value="fadeInRight">fade In Right</option>
+					<option value="fadeInLeftBig">fade In Left Big</option>
+					<option value="fadeInLeft">fade In Left</option>
+					<option value="fadeInDown">fade In Down</option>
+					<option value="fadeIn">fade In</option>
+					<option value="bounceOutUp">bounce Out Up</option>
+					<option value="bounceOutRight">bounce Out Right</option>
+					<option value="bounceOutLeft">bounce Out Left</option>
+					<option value="bounceOutDown">bounce Out Down</option>
+					<option value="bounceOut">bounce Out</option>
+					<option value="bounceInUp">bounce In Up</option>
+					<option value="bounceInRight">bounce In Right</option>
+					<option value="bounceInLeft">bounce In Left</option>
+					<option value="bounceInDown">bounce In Down</option>
+					<option value="bounceIn">bounce In</option>
+					<option value="wobble">wobble</option>
+					<option value="tada">tada</option>
+					<option value="swing">swing</option>
+					<option value="shake">shake</option>
+					<option value="rubberBand">rubber Band</option>
+					<option value="pulse">pulse</option>
+					<option value="flash">flash</option>
+					<option value="bounce">bounce</option>
+				</field>
+				<field name="searchAndSocialWowAnim" type="list" default="" 
+						label="Search and social icons Animation" description="Choose an animation type">
+					<option value="">None</option>
+					<option value="slideOutUp">slide Out Up</option>
+					<option value="slideOutRight">slide Out Right</option>
+					<option value="slideOutLeft">slide Out Left</option>
+					<option value="slideOutDown">slide Out Down</option>
+					<option value="slideInUp">slide In Up</option>
+					<option value="slideInRight">slide In Right</option>
+					<option value="slideInLeft">slide In Left</option>
+					<option value="slideInDown">slide In Down</option>
+					<option value="zoomOutUp">zoom Out Up</option>
+					<option value="zoomOutRight">zoom Out Right</option>
+					<option value="zoomOutLeft">zoom Out Left</option>
+					<option value="zoomOutDown">zoom Out Down</option>
+					<option value="zoomOut">zoom Out</option>
+					<option value="zoomInUp">zoom In Up</option>
+					<option value="zoomInRight">zoom In Right</option>
+					<option value="zoomInLeft">zoom In Left</option>
+					<option value="zoomInDown">zoom In Down</option>
+					<option value="zoomIn">zoom In</option>
+					<option value="rollOut">roll Out</option>
+					<option value="rollIn">roll In</option>
+					<option value="hinge">hinge</option>
+					<option value="rotateOutUpRight">rotate Out Up Right</option>
+					<option value="rotateOutUpLeft">rotate Out Up Left</option>
+					<option value="rotateOutDownRight">rotate Out Down Right</option>
+					<option value="rotateOutDownLeft">rotate Out Down Left</option>
+					<option value="rotateOut">rotate Out</option>
+					<option value="rotateInUpRight">rotate In Up Right</option>
+					<option value="rotateInUpLeft">rotate In Up Left</option>
+					<option value="rotateInDownRight">rotate In Down Right</option>
+					<option value="rotateInDownLeft">rotate In Down Left</option>
+					<option value="rotateIn">rotate In</option>
+					<option value="lightSpeedOut">light Speed Out</option>
+					<option value="lightSpeedIn">light Speed In</option>
+					<option value="flipOutY">flip Out Y</option>
+					<option value="flipOutX">flip Out X</option>
+					<option value="flipInY">flip In Y</option>
+					<option value="flipInX">flip In X</option>
+					<option value="fadeOutUpBig">fade Out Up Big</option>
+					<option value="fadeOutUp">fade Out Up</option>
+					<option value="fadeOutRightBig">fade Out Right Big</option>
+					<option value="fadeOutRight">fade Out Right</option>
+					<option value="fadeOutLeftBig">fade Out Left Big</option>
+					<option value="fadeOutLeft">fade Out Left</option>
+					<option value="fadeOutDownBig">fade Out Down Big</option>
+					<option value="fadeOutDown">fade Out Down</option>
+					<option value="fadeOut">fade Out</option>
+					<option value="fadeInUpBig">fade In Up Big</option>
+					<option value="fadeInUp">fade In Up</option>
+					<option value="fadeInRightBig">fade In Right Big</option>
+					<option value="fadeInRight">fade In Right</option>
+					<option value="fadeInLeftBig">fade In Left Big</option>
+					<option value="fadeInLeft">fade In Left</option>
+					<option value="fadeInDown">fade In Down</option>
+					<option value="fadeIn">fade In</option>
+					<option value="bounceOutUp">bounce Out Up</option>
+					<option value="bounceOutRight">bounce Out Right</option>
+					<option value="bounceOutLeft">bounce Out Left</option>
+					<option value="bounceOutDown">bounce Out Down</option>
+					<option value="bounceOut">bounce Out</option>
+					<option value="bounceInUp">bounce In Up</option>
+					<option value="bounceInRight">bounce In Right</option>
+					<option value="bounceInLeft">bounce In Left</option>
+					<option value="bounceInDown">bounce In Down</option>
+					<option value="bounceIn">bounce In</option>
+					<option value="wobble">wobble</option>
+					<option value="tada">tada</option>
+					<option value="swing">swing</option>
+					<option value="shake">shake</option>
+					<option value="rubberBand">rubber Band</option>
+					<option value="pulse">pulse</option>
+					<option value="flash">flash</option>
+					<option value="bounce">bounce</option>
+				</field>
+				<field name="footerWowAnim" type="list" default="" 
+						label="Footer Animation" description="Choose an animation type">
+					<option value="">None</option>	
+					<option value="slideOutUp">slide Out Up</option>
+					<option value="slideOutRight">slide Out Right</option>
+					<option value="slideOutLeft">slide Out Left</option>
+					<option value="slideOutDown">slide Out Down</option>
+					<option value="slideInUp">slide In Up</option>
+					<option value="slideInRight">slide In Right</option>
+					<option value="slideInLeft">slide In Left</option>
+					<option value="slideInDown">slide In Down</option>
+					<option value="zoomOutUp">zoom Out Up</option>
+					<option value="zoomOutRight">zoom Out Right</option>
+					<option value="zoomOutLeft">zoom Out Left</option>
+					<option value="zoomOutDown">zoom Out Down</option>
+					<option value="zoomOut">zoom Out</option>
+					<option value="zoomInUp">zoom In Up</option>
+					<option value="zoomInRight">zoom In Right</option>
+					<option value="zoomInLeft">zoom In Left</option>
+					<option value="zoomInDown">zoom In Down</option>
+					<option value="zoomIn">zoom In</option>
+					<option value="rollOut">roll Out</option>
+					<option value="rollIn">roll In</option>
+					<option value="hinge">hinge</option>
+					<option value="rotateOutUpRight">rotate Out Up Right</option>
+					<option value="rotateOutUpLeft">rotate Out Up Left</option>
+					<option value="rotateOutDownRight">rotate Out Down Right</option>
+					<option value="rotateOutDownLeft">rotate Out Down Left</option>
+					<option value="rotateOut">rotate Out</option>
+					<option value="rotateInUpRight">rotate In Up Right</option>
+					<option value="rotateInUpLeft">rotate In Up Left</option>
+					<option value="rotateInDownRight">rotate In Down Right</option>
+					<option value="rotateInDownLeft">rotate In Down Left</option>
+					<option value="rotateIn">rotate In</option>
+					<option value="lightSpeedOut">light Speed Out</option>
+					<option value="lightSpeedIn">light Speed In</option>
+					<option value="flipOutY">flip Out Y</option>
+					<option value="flipOutX">flip Out X</option>
+					<option value="flipInY">flip In Y</option>
+					<option value="flipInX">flip In X</option>
+					<option value="fadeOutUpBig">fade Out Up Big</option>
+					<option value="fadeOutUp">fade Out Up</option>
+					<option value="fadeOutRightBig">fade Out Right Big</option>
+					<option value="fadeOutRight">fade Out Right</option>
+					<option value="fadeOutLeftBig">fade Out Left Big</option>
+					<option value="fadeOutLeft">fade Out Left</option>
+					<option value="fadeOutDownBig">fade Out Down Big</option>
+					<option value="fadeOutDown">fade Out Down</option>
+					<option value="fadeOut">fade Out</option>
+					<option value="fadeInUpBig">fade In Up Big</option>
+					<option value="fadeInUp">fade In Up</option>
+					<option value="fadeInRightBig">fade In Right Big</option>
+					<option value="fadeInRight">fade In Right</option>
+					<option value="fadeInLeftBig">fade In Left Big</option>
+					<option value="fadeInLeft">fade In Left</option>
+					<option value="fadeInDown">fade In Down</option>
+					<option value="fadeIn">fade In</option>
+					<option value="bounceOutUp">bounce Out Up</option>
+					<option value="bounceOutRight">bounce Out Right</option>
+					<option value="bounceOutLeft">bounce Out Left</option>
+					<option value="bounceOutDown">bounce Out Down</option>
+					<option value="bounceOut">bounce Out</option>
+					<option value="bounceInUp">bounce In Up</option>
+					<option value="bounceInRight">bounce In Right</option>
+					<option value="bounceInLeft">bounce In Left</option>
+					<option value="bounceInDown">bounce In Down</option>
+					<option value="bounceIn">bounce In</option>
+					<option value="wobble">wobble</option>
+					<option value="tada">tada</option>
+					<option value="swing">swing</option>
+					<option value="shake">shake</option>
+					<option value="rubberBand">rubber Band</option>
+					<option value="pulse">pulse</option>
+					<option value="flash">flash</option>
+					<option value="bounce">bounce</option>
+				</field>
+				<field name="homepgIntroWelcomeWowAnim" type="list" default="" 
+						label="Home page welcome-intro Animation" description="Choose an animation type">
+					<option value="">None</option>
+					<option value="slideOutUp">slide Out Up</option>
+					<option value="slideOutRight">slide Out Right</option>
+					<option value="slideOutLeft">slide Out Left</option>
+					<option value="slideOutDown">slide Out Down</option>
+					<option value="slideInUp">slide In Up</option>
+					<option value="slideInRight">slide In Right</option>
+					<option value="slideInLeft">slide In Left</option>
+					<option value="slideInDown">slide In Down</option>
+					<option value="zoomOutUp">zoom Out Up</option>
+					<option value="zoomOutRight">zoom Out Right</option>
+					<option value="zoomOutLeft">zoom Out Left</option>
+					<option value="zoomOutDown">zoom Out Down</option>
+					<option value="zoomOut">zoom Out</option>
+					<option value="zoomInUp">zoom In Up</option>
+					<option value="zoomInRight">zoom In Right</option>
+					<option value="zoomInLeft">zoom In Left</option>
+					<option value="zoomInDown">zoom In Down</option>
+					<option value="zoomIn">zoom In</option>
+					<option value="rollOut">roll Out</option>
+					<option value="rollIn">roll In</option>
+					<option value="hinge">hinge</option>
+					<option value="rotateOutUpRight">rotate Out Up Right</option>
+					<option value="rotateOutUpLeft">rotate Out Up Left</option>
+					<option value="rotateOutDownRight">rotate Out Down Right</option>
+					<option value="rotateOutDownLeft">rotate Out Down Left</option>
+					<option value="rotateOut">rotate Out</option>
+					<option value="rotateInUpRight">rotate In Up Right</option>
+					<option value="rotateInUpLeft">rotate In Up Left</option>
+					<option value="rotateInDownRight">rotate In Down Right</option>
+					<option value="rotateInDownLeft">rotate In Down Left</option>
+					<option value="rotateIn">rotate In</option>
+					<option value="lightSpeedOut">light Speed Out</option>
+					<option value="lightSpeedIn">light Speed In</option>
+					<option value="flipOutY">flip Out Y</option>
+					<option value="flipOutX">flip Out X</option>
+					<option value="flipInY">flip In Y</option>
+					<option value="flipInX">flip In X</option>
+					<option value="fadeOutUpBig">fade Out Up Big</option>
+					<option value="fadeOutUp">fade Out Up</option>
+					<option value="fadeOutRightBig">fade Out Right Big</option>
+					<option value="fadeOutRight">fade Out Right</option>
+					<option value="fadeOutLeftBig">fade Out Left Big</option>
+					<option value="fadeOutLeft">fade Out Left</option>
+					<option value="fadeOutDownBig">fade Out Down Big</option>
+					<option value="fadeOutDown">fade Out Down</option>
+					<option value="fadeOut">fade Out</option>
+					<option value="fadeInUpBig">fade In Up Big</option>
+					<option value="fadeInUp">fade In Up</option>
+					<option value="fadeInRightBig">fade In Right Big</option>
+					<option value="fadeInRight">fade In Right</option>
+					<option value="fadeInLeftBig">fade In Left Big</option>
+					<option value="fadeInLeft">fade In Left</option>
+					<option value="fadeInDown">fade In Down</option>
+					<option value="fadeIn">fade In</option>
+					<option value="bounceOutUp">bounce Out Up</option>
+					<option value="bounceOutRight">bounce Out Right</option>
+					<option value="bounceOutLeft">bounce Out Left</option>
+					<option value="bounceOutDown">bounce Out Down</option>
+					<option value="bounceOut">bounce Out</option>
+					<option value="bounceInUp">bounce In Up</option>
+					<option value="bounceInRight">bounce In Right</option>
+					<option value="bounceInLeft">bounce In Left</option>
+					<option value="bounceInDown">bounce In Down</option>
+					<option value="bounceIn">bounce In</option>
+					<option value="wobble">wobble</option>
+					<option value="tada">tada</option>
+					<option value="swing">swing</option>
+					<option value="shake">shake</option>
+					<option value="rubberBand">rubber Band</option>
+					<option value="pulse">pulse</option>
+					<option value="flash">flash</option>
+					<option value="bounce">bounce</option>
+				</field>
+				<field name="srvSectionWowAnim" type="list" default="" 
+						label="Services' Section Animation" description="Choose an animation type">
+					<option value="">None</option>	
+					<option value="slideOutUp">slide Out Up</option>
+					<option value="slideOutRight">slide Out Right</option>
+					<option value="slideOutLeft">slide Out Left</option>
+					<option value="slideOutDown">slide Out Down</option>
+					<option value="slideInUp">slide In Up</option>
+					<option value="slideInRight">slide In Right</option>
+					<option value="slideInLeft">slide In Left</option>
+					<option value="slideInDown">slide In Down</option>
+					<option value="zoomOutUp">zoom Out Up</option>
+					<option value="zoomOutRight">zoom Out Right</option>
+					<option value="zoomOutLeft">zoom Out Left</option>
+					<option value="zoomOutDown">zoom Out Down</option>
+					<option value="zoomOut">zoom Out</option>
+					<option value="zoomInUp">zoom In Up</option>
+					<option value="zoomInRight">zoom In Right</option>
+					<option value="zoomInLeft">zoom In Left</option>
+					<option value="zoomInDown">zoom In Down</option>
+					<option value="zoomIn">zoom In</option>
+					<option value="rollOut">roll Out</option>
+					<option value="rollIn">roll In</option>
+					<option value="hinge">hinge</option>
+					<option value="rotateOutUpRight">rotate Out Up Right</option>
+					<option value="rotateOutUpLeft">rotate Out Up Left</option>
+					<option value="rotateOutDownRight">rotate Out Down Right</option>
+					<option value="rotateOutDownLeft">rotate Out Down Left</option>
+					<option value="rotateOut">rotate Out</option>
+					<option value="rotateInUpRight">rotate In Up Right</option>
+					<option value="rotateInUpLeft">rotate In Up Left</option>
+					<option value="rotateInDownRight">rotate In Down Right</option>
+					<option value="rotateInDownLeft">rotate In Down Left</option>
+					<option value="rotateIn">rotate In</option>
+					<option value="lightSpeedOut">light Speed Out</option>
+					<option value="lightSpeedIn">light Speed In</option>
+					<option value="flipOutY">flip Out Y</option>
+					<option value="flipOutX">flip Out X</option>
+					<option value="flipInY">flip In Y</option>
+					<option value="flipInX">flip In X</option>
+					<option value="fadeOutUpBig">fade Out Up Big</option>
+					<option value="fadeOutUp">fade Out Up</option>
+					<option value="fadeOutRightBig">fade Out Right Big</option>
+					<option value="fadeOutRight">fade Out Right</option>
+					<option value="fadeOutLeftBig">fade Out Left Big</option>
+					<option value="fadeOutLeft">fade Out Left</option>
+					<option value="fadeOutDownBig">fade Out Down Big</option>
+					<option value="fadeOutDown">fade Out Down</option>
+					<option value="fadeOut">fade Out</option>
+					<option value="fadeInUpBig">fade In Up Big</option>
+					<option value="fadeInUp">fade In Up</option>
+					<option value="fadeInRightBig">fade In Right Big</option>
+					<option value="fadeInRight">fade In Right</option>
+					<option value="fadeInLeftBig">fade In Left Big</option>
+					<option value="fadeInLeft">fade In Left</option>
+					<option value="fadeInDown">fade In Down</option>
+					<option value="fadeIn">fade In</option>
+					<option value="bounceOutUp">bounce Out Up</option>
+					<option value="bounceOutRight">bounce Out Right</option>
+					<option value="bounceOutLeft">bounce Out Left</option>
+					<option value="bounceOutDown">bounce Out Down</option>
+					<option value="bounceOut">bounce Out</option>
+					<option value="bounceInUp">bounce In Up</option>
+					<option value="bounceInRight">bounce In Right</option>
+					<option value="bounceInLeft">bounce In Left</option>
+					<option value="bounceInDown">bounce In Down</option>
+					<option value="bounceIn">bounce In</option>
+					<option value="wobble">wobble</option>
+					<option value="tada">tada</option>
+					<option value="swing">swing</option>
+					<option value="shake">shake</option>
+					<option value="rubberBand">rubber Band</option>
+					<option value="pulse">pulse</option>
+					<option value="flash">flash</option>
+					<option value="bounce">bounce</option>
+				</field>
+				<field name="testimonialsSectionWowAnim" type="list" default="" 
+						label="Testimonials Section Animation" description="Choose an animation type">
+					<option value="">None</option>	
+					<option value="slideOutUp">slide Out Up</option>
+					<option value="slideOutRight">slide Out Right</option>
+					<option value="slideOutLeft">slide Out Left</option>
+					<option value="slideOutDown">slide Out Down</option>
+					<option value="slideInUp">slide In Up</option>
+					<option value="slideInRight">slide In Right</option>
+					<option value="slideInLeft">slide In Left</option>
+					<option value="slideInDown">slide In Down</option>
+					<option value="zoomOutUp">zoom Out Up</option>
+					<option value="zoomOutRight">zoom Out Right</option>
+					<option value="zoomOutLeft">zoom Out Left</option>
+					<option value="zoomOutDown">zoom Out Down</option>
+					<option value="zoomOut">zoom Out</option>
+					<option value="zoomInUp">zoom In Up</option>
+					<option value="zoomInRight">zoom In Right</option>
+					<option value="zoomInLeft">zoom In Left</option>
+					<option value="zoomInDown">zoom In Down</option>
+					<option value="zoomIn">zoom In</option>
+					<option value="rollOut">roll Out</option>
+					<option value="rollIn">roll In</option>
+					<option value="hinge">hinge</option>
+					<option value="rotateOutUpRight">rotate Out Up Right</option>
+					<option value="rotateOutUpLeft">rotate Out Up Left</option>
+					<option value="rotateOutDownRight">rotate Out Down Right</option>
+					<option value="rotateOutDownLeft">rotate Out Down Left</option>
+					<option value="rotateOut">rotate Out</option>
+					<option value="rotateInUpRight">rotate In Up Right</option>
+					<option value="rotateInUpLeft">rotate In Up Left</option>
+					<option value="rotateInDownRight">rotate In Down Right</option>
+					<option value="rotateInDownLeft">rotate In Down Left</option>
+					<option value="rotateIn">rotate In</option>
+					<option value="lightSpeedOut">light Speed Out</option>
+					<option value="lightSpeedIn">light Speed In</option>
+					<option value="flipOutY">flip Out Y</option>
+					<option value="flipOutX">flip Out X</option>
+					<option value="flipInY">flip In Y</option>
+					<option value="flipInX">flip In X</option>
+					<option value="fadeOutUpBig">fade Out Up Big</option>
+					<option value="fadeOutUp">fade Out Up</option>
+					<option value="fadeOutRightBig">fade Out Right Big</option>
+					<option value="fadeOutRight">fade Out Right</option>
+					<option value="fadeOutLeftBig">fade Out Left Big</option>
+					<option value="fadeOutLeft">fade Out Left</option>
+					<option value="fadeOutDownBig">fade Out Down Big</option>
+					<option value="fadeOutDown">fade Out Down</option>
+					<option value="fadeOut">fade Out</option>
+					<option value="fadeInUpBig">fade In Up Big</option>
+					<option value="fadeInUp">fade In Up</option>
+					<option value="fadeInRightBig">fade In Right Big</option>
+					<option value="fadeInRight">fade In Right</option>
+					<option value="fadeInLeftBig">fade In Left Big</option>
+					<option value="fadeInLeft">fade In Left</option>
+					<option value="fadeInDown">fade In Down</option>
+					<option value="fadeIn">fade In</option>
+					<option value="bounceOutUp">bounce Out Up</option>
+					<option value="bounceOutRight">bounce Out Right</option>
+					<option value="bounceOutLeft">bounce Out Left</option>
+					<option value="bounceOutDown">bounce Out Down</option>
+					<option value="bounceOut">bounce Out</option>
+					<option value="bounceInUp">bounce In Up</option>
+					<option value="bounceInRight">bounce In Right</option>
+					<option value="bounceInLeft">bounce In Left</option>
+					<option value="bounceInDown">bounce In Down</option>
+					<option value="bounceIn">bounce In</option>
+					<option value="wobble">wobble</option>
+					<option value="tada">tada</option>
+					<option value="swing">swing</option>
+					<option value="shake">shake</option>
+					<option value="rubberBand">rubber Band</option>
+					<option value="pulse">pulse</option>
+					<option value="flash">flash</option>
+					<option value="bounce">bounce</option>
+<!-- End - Animation Controls -->
+					
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
